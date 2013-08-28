@@ -1,10 +1,11 @@
 #####################################
 #
-#  繁體中文 (by @wastemobile)
+#  Traditional Chinese/繁體中文
+#  (by @wastemobile)
 #
 # ###################################
 
-translations:
+zh-tw:
 
   # Universal
   add: 新增
