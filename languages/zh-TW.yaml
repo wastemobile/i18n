@@ -19,7 +19,7 @@ zh-tw:
   home: 首頁
   dashboard: 儀表板
   pages: 頁面
-  content: 內容
+  # content: 內容
   members: 成員
   account: 帳戶
   system: 系統
