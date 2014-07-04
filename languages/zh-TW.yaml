@@ -13,31 +13,53 @@ zh-tw:
   list: 列表
   none: 無
   view: 檢視
+  in: 在
+  remove: 移除
 
   # Nav
+  home: 首頁
   dashboard: 總覽
   pages: 頁面
+  content: 內容
   members: 會員
   account: 帳號
   system: 系統
   help: 幫助
   view_site: 前往網站
   logout: 登出
+  logs: 系統記錄
 
   # Entries
   entry: 資料
+  entries: 資料
+  create: 新增
+  new_entry: 新資料
+  editing_entry: 編輯資料
   create_entry: 新增資料
   delete_entry: 刪除資料
   view_entry: 檢視資料
   list_entries: 資料列表
+  take_action: 處理
+  delete_entries: 刪除資料
+  confirm_delete: 確認刪除
 
   # Pages
   page: 頁面
+  edit_page: 編輯頁面
+  editing_page: 頁面編輯中
   new_top_level_page: 上端頁面
   site_pages: 網站頁面
   new_child_page: 新增子頁面
   view_page: 檢試頁面
+  delete_page: 刪除頁面
   select_new_page_type: 選擇新頁面類型
+  parent: 上層
+  or: 或
+  and: 與
+  pagedelete_confirm: "確認刪除這個頁面？"
+  update_available: 允許更新
+  up_to_date: 最新的
+  offline: 控制台目前為離線狀態
 
   # Publish
   title: 標題
@@ -49,8 +71,10 @@ zh-tw:
   order_number: 排序數字
   publish_date: 發佈日期
   publish_time: 發佈時間
+  save: 儲存
   save_publish: '儲存並發佈'
   content: 內容
+  new: 新
 
   # Statuses
   status: 狀態
@@ -61,10 +85,11 @@ zh-tw:
   # Members and forms
   login: 登入
   admin: 管理
-  username: 名稱
-  password: 密碼
+  email: 電郵
+  username: 用戶名稱
+  password: 輸入密碼
   password_confirmation: 確認密碼
-  type_again: '請再試一次'
+  type_again: '請再輸入一次'
   encrypt_password: 加密儲存
   first_name: 名字
   last_name: 姓氏
@@ -72,31 +97,87 @@ zh-tw:
   role: 角色
   member: 會員
   new_member: 新會員
+  creating_member: 新增會員
+  editing_member: "編輯會員： "
+
+  # Logs
+  site_logs: 網站系統記錄
+  clear_logs: 清除所有記錄
+  log_file: 您的記錄檔案
+  log_unwritable: 沒有寫入權限，因此系統記錄無法保存。
+  showing: 顯示
+  messages_all: 所有訊息
+  messages_debug: 只有 debug 訊息
+  messages_info: 只有 info 訊息
+  messages_warn: 只有 warn 訊息
+  messages_error: 只有 error 訊息
+  messages_fatal: 只有 fatal 訊息
+  info_plus: info 等級以上的訊息
+  warn_plus: warn 等級以上的訊息
+  error_plus: error 等級以上的訊息
+  messages_happened: 發生于
+  messages_level: 等級
+  messages_when: 時間
+  messages_what: 原因
+  messages_page: 頁面
+  messages_message: 訊息
+  log_filter_nomessages: "記錄檔存在，但沒有符合篩選條件的訊息。"
+  log_nomessages: "記錄檔存在，但沒有訊息。"
+  log_nomessages_logged: "還沒有訊息被記錄。"
+  logging_yes: "此網站 <strong>正在</strong> 記錄各項訊息。"
+  logging_no: "此網站 <strong>沒有</strong> 記錄各項訊息"
+  log_messages: "訊息來自下列等級以上： "
+  log_turning_on: "開啟系統記錄功能，請將 <code>_config/settings.yaml</code> 檔案中的 <code>_log_enabled</code> 設為 <code>true</code> 。"
 
   # Messages, Errors & Confirmations
+  site_unlicensed: 尚未取得授權，請輸入授權碼
   admin_404: '您要求的頁面並不存在，只好先讓您看到這一頁。'
   already_exists: 已經存在
   is_required: 必要選項
+  content_not_found: "找不到內容！"
   content_not_writable: "糟糕！你的內容目錄或是檔案無法寫入，您得修正這個錯誤。"
   users_not_writable: "糟糕！你的使用者目錄或是檔案無法寫入，您得修正這個錯誤。"
-  msg_password_encrypted: '密碼已經編碼後安全存放，請再登入一次。'
+  msg_password_encrypted: "密碼已經編碼後安全存放，請再登入一次。"
+  password_confirmation_required: "必須輸入確認"
+  password_confirmation_match: "不相符"
+  password_confirmation_does_not_match: "兩次輸入的密碼必須一致。"
   incorrect_username: 找不到這個用戶
   incorrect_password: 密碼不正確
-  incorrect_username_password: '用戶名稱或密碼錯誤，請再試一次。'
-  entry_deleted: '資料已刪除！'
-  page_saved: '頁面已儲存！'
-  entry_saved: '資料已儲存！'
-  member_saved: '會員已儲存！'
+  incorrect_username_password: "用戶名稱或密碼錯誤，請再試一次。"
+  entry_deleted: "資料已刪除！"
+  entries_deleted: "資料已刪除！"
+  page_deleted: "頁面已刪除！"
+  page_unable_delete: "無法刪除頁面"
+  member_deleted: "會員已刪除！"
+  page_saved: "頁面已儲存！"
+  entry_saved: "資料已儲存！"
+  member_saved: "會員已儲存！"
+  invalid_username: "用戶名稱包含不允許的字元"
+  username_already_exists: "已經存在相同名稱的用戶"
+  viewing_all: 檢視所有
 
   error: 錯誤
-  error_form_submission: '抱歉，資料提交過程發生錯誤。'
+  error_form_submission: "抱歉，資料提交過程發生錯誤。"
   are_you_sure: 確定嗎？這個操作無法回復。
   access_denied: 拒絕存取
   enable_curl: 必須啓用 cURL 才能通過安全測試。
 
+  # File-upload errors
+  upload_error_ini_size: 檔案上傳失敗。檔案大小超過 PHP 設定的上限。
+  upload_error_form_size: 檔案上傳失敗。檔案超過表單設定的 `MAX_FILE_SIZE` 欄位上限。
+  upload_error_err_partial: 檔案上傳失敗。只傳送了檔案的一部份。
+  upload_error_no_file: 檔案上傳失敗。沒有選擇想要上傳的檔案。
+  upload_error_no_temp_dir: 檔案上傳失敗。沒有指定暫時存放的目錄。
+  upload_error_cant_write: 檔案上傳失敗。暫時存放目錄無法寫入。
+  upload_error_extension: 檔案上傳失敗。某個 PHP  extension 阻止了檔案的上傳。
+  upload_error_unknown: 檔案因不明原因上傳失敗。
+
   # Security
-  system_status: 系統狀態
-  system_files_security_check: 網站檔案安全檢測
+  security_status: 安全狀態
+  security_files_security_check: 網站檔案安全檢測
+  secure_status: 安全狀態
+  password_status: 密碼狀態
+  curl_needed: "需要在伺服器上啟用 cURL 來自動檢測系統安全"
   folder_file: 目錄/檔案
   action_required: 需要調整
   secure: 安全
@@ -112,3 +193,16 @@ zh-tw:
   security_user_files: "您的用戶檔案暴露於網路，您必須保護（設定讀取權限）這些檔案。"
   security_content_folder: "您的內容目錄暴露於網路，雖然並非必要，但還是建議您保護這個目錄。"
   security_template_files: "您的佈景檔案暴露於網路，雖然並非必要，但還是建議您保護這個目錄。"
+  security_logs_folder: "您的系統記錄檔案暴露於網路，您必須保護（設定讀取權限）這些檔案。"
+
+  # Location
+  location_name: 地點名稱
+  latitude: 緯度
+  longitude: 經度
+
+  # Raven
+  export_csv: 匯出CSV檔案
+  raven: Raven
+  raven_forms: Raven表單
+  form: 表單
+  submissions: Submissions
