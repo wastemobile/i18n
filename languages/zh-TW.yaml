@@ -13,26 +13,19 @@ zh-tw:
   list: 列表
   none: 無
   view: 檢視
-  in: 於
 
   # Nav
-  home: 首頁
-  dashboard: 儀表板
+  dashboard: 總覽
   pages: 頁面
-  # content: 內容
-  members: 成員
-  account: 帳戶
+  members: 會員
+  account: 帳號
   system: 系統
-  help: 協助
-  view_site: 檢視網站
+  help: 幫助
+  view_site: 前往網站
   logout: 登出
-  logs: 系統記錄
 
   # Entries
   entry: 資料
-  entries: 資料
-  create: 新增
-  new_entry: 新資料
   create_entry: 新增資料
   delete_entry: 刪除資料
   view_entry: 檢視資料
@@ -40,18 +33,11 @@ zh-tw:
 
   # Pages
   page: 頁面
-  new_top_level_page: 頂層頁面
+  new_top_level_page: 上端頁面
   site_pages: 網站頁面
-  new_child_page: 新次層頁面
+  new_child_page: 新增子頁面
   view_page: 檢試頁面
-  delete_page: 刪除頁面
   select_new_page_type: 選擇新頁面類型
-  parent: 上層
-  or: 或
-
-  update_available: 有更新
-  up_to_date: 已更新
-  offline: 管理界面目前處於離線狀態
 
   # Publish
   title: 標題
@@ -59,14 +45,12 @@ zh-tw:
   date: 日期
   number: 數字
   editing: 編輯
-  enter_title: 輸入標題...
+  enter_title: 輸入標題
   order_number: 排序數字
   publish_date: 發佈日期
   publish_time: 發佈時間
-  save: 儲存
   save_publish: '儲存並發佈'
   content: 內容
-  new: 新的
 
   # Statuses
   status: 狀態
@@ -77,61 +61,54 @@ zh-tw:
   # Members and forms
   login: 登入
   admin: 管理
-  email: 電郵
   username: 名稱
   password: 密碼
   password_confirmation: 確認密碼
   type_again: '請再試一次'
-  encrypt_password: 將密碼編碼儲存？
+  encrypt_password: 加密儲存
   first_name: 名字
   last_name: 姓氏
   biography: 自我介紹
   role: 角色
-  member: 成員
-  new_member: 新成員
-
-  # Logs
-  site_logs: 網站系統記錄
-  clear_logs: 清除所有記錄
+  member: 會員
+  new_member: 新會員
 
   # Messages, Errors & Confirmations
   admin_404: '您要求的頁面並不存在，只好先讓您看到這一頁。'
   already_exists: 已經存在
-  is_required: 是必要的
+  is_required: 必要選項
   content_not_writable: "糟糕！你的內容目錄或是檔案無法寫入，您得修正這個錯誤。"
   users_not_writable: "糟糕！你的使用者目錄或是檔案無法寫入，您得修正這個錯誤。"
   msg_password_encrypted: '密碼已經編碼後安全存放，請再登入一次。'
   incorrect_username: 找不到這個用戶
   incorrect_password: 密碼不正確
   incorrect_username_password: '用戶名稱或密碼錯誤，請再試一次。'
-  entry_deleted: '資料刪除完成！'
-  page_saved: '頁面儲存完成！'
-  entry_saved: '資料儲存完成！'
-  member_saved: '成員儲存完成！'
-  viewing_all: 檢視所有
+  entry_deleted: '資料已刪除！'
+  page_saved: '頁面已儲存！'
+  entry_saved: '資料已儲存！'
+  member_saved: '會員已儲存！'
 
   error: 錯誤
   error_form_submission: '抱歉，資料提交過程發生錯誤。'
   are_you_sure: 確定嗎？這個操作無法回復。
   access_denied: 拒絕存取
-  enable_curl: cURL 必須啓用才能通過安全測試。
+  enable_curl: 必須啓用 cURL 才能通過安全測試。
 
   # Security
-  security_status: 安全狀態
-  security_files_security_check: 網站檔案安全檢測
+  system_status: 系統狀態
+  system_files_security_check: 網站檔案安全檢測
   folder_file: 目錄/檔案
   action_required: 需要調整
   secure: 安全
   unsecure: 危險
-  user_accounts_security_check: 使用者帳戶安全檢測
+  user_accounts_security_check: 帳戶安全檢測
   user_file: 使用者檔案
   encrypted: 已編碼
   unencrypted: 未編碼
-  action_encrypt_password: 將密碼編碼
+  action_encrypt_password: 加密儲存
   security_app_folder: "您的應用程式檔案暴露於網路，雖然並非必要，但還是建議您保護這個目錄。"
   security_config_folder: "您的設定檔案目錄暴露於網路，為了安全起見，您必須保護（設定讀取權限）這個目錄。"
   security_settings_files: "您的設定檔案暴露於網路，您必須保護（設定讀取權限）這些檔案。"
   security_user_files: "您的用戶檔案暴露於網路，您必須保護（設定讀取權限）這些檔案。"
   security_content_folder: "您的內容目錄暴露於網路，雖然並非必要，但還是建議您保護這個目錄。"
   security_template_files: "您的佈景檔案暴露於網路，雖然並非必要，但還是建議您保護這個目錄。"
-  security_logs_folder: "您的系統紀錄目錄暴露於網路，您必須保護（設定讀取權限）這個目錄。"
